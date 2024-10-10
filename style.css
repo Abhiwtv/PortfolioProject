@@ -1,0 +1,110 @@
+.navibar ul li a{
+    color: rgb(200, 255, 0);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 23px;
+    transition: 0.5ms;
+}
+.navibar ul li{
+    display: inline;
+    margin-left: 30px;
+
+ }
+.navibar ul li:hover a, .navibar ul li.Home a{
+    color: #35fb08;
+}
+
+.navibar ul{
+    display: flex;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+  background-color: #03354e;
+}
+
+.navibar{
+width: 100%;
+top: 0%;
+left: 0%;
+padding: 25px;
+/* z-index: 100; */
+display:flex;
+justify-content: right;
+align-items: center;
+
+}
+
+.content{
+ display: flex;
+ align-items: center;
+ height: 100vh;
+padding: 60px 10% 0;
+color: rgb(234, 177, 20);
+} 
+.body h1{
+    font-size: 50px;
+} 
+.body h3{
+    font-size: 30px;
+}
+
+.body h3 span{
+    display: inline-block;
+    -webkit-text-stroke: 1px #de7309;
+    animation: displaytext 9s linear infinite ;
+    animation-delay: calc(-3s*var(--j));
+}
+
+@keyframes displaytext {
+    25%,100%{
+        display: none;
+    }
+    
+}
+.body .links a{
+    padding: 1px;
+    align-items: flex-start;
+    border: #de7309;
+     border-radius: 5px;
+    font-size: 30px;
+    transition: 0.5ms;
+}
+.body .links a:hover{
+    background-color: #617001;
+    color:aqua ;
+
+
+}
+ .homeimg .boximg{
+     height: 40vw;
+    width: 40vw; 
+   
+  
+} 
+
+.homeimg .boximg .img{
+   
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.homeimg .boximg .img img{
+    position:absolute;
+    display: block;
+    object-fit: cover;
+    mix-blend-mode:lighten;
+    object-position: center;
+}
+
